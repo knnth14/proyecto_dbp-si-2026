@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comida - Cine</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+ 
+  <header>
+    <h1>PortoCinex</h1>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="cartelera.html">Cartelera</a></li>
+        <li><a href="comida.html" aria-current="page">Comida</a></li>
+        <li><a href="registro.html">Registro de usuario</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <h2>Comida del cine</h2>
+    <p>Elige tus productos y agrégalos al carrito.</p>
+
+    <p id="mensaje-carrito" aria-live="polite"></p>
+
+    <ul class="productos">
+      <li class="producto" data-nombre="Canguil">
+        
+        
+        <h3>Canguil</h3>
+        <img src="img/Canguil.jpeg" width="300" height="300" alt="Imagen de canguil (reemplazar)">
+        <p>Canguil recién hecho.</p>
+        <label for="tamano-canguil">Tamaño:</label>
+        <select id="tamano-canguil" name="tamano_canguil">
+          <option value="Pequeño" data-precio="2.00">Pequeño - $2.00</option>
+          <option value="Mediano" data-precio="3.00">Mediano - $3.00</option>
+          <option value="Grande" data-precio="4.00">Grande - $4.00</option>
+        </select>
+        <p><button type="button" class="btn-agregar" aria-label="Agregar canguil al carrito">Agregar al carrito</button></p>
+       
+      </li>
+      <li class="producto" data-nombre="Cola">
+        
+        
+        <h3>Cola</h3>
+        <img src="img/Cola.jpeg" width="300" height="300" alt="Imagen de cola (reemplazar)">
+        <p>Bebida fría.</p>
+        <label for="tamano-cola">Tamaño:</label>
+        <select id="tamano-cola" name="tamano_cola">
+          <option value="Pequeño" data-precio="1.50">Pequeño - $1.50</option>
+          <option value="Mediano" data-precio="2.00">Mediano - $2.00</option>
+          <option value="Grande" data-precio="2.50">Grande - $2.50</option>
+        </select>
+        <p><button type="button" class="btn-agregar" aria-label="Agregar cola al carrito">Agregar al carrito</button></p>
+        
+      </li>
+      <li class="producto" data-nombre="Galleta" data-precio="1.50">
+        
+       
+        <h3>Galleta</h3>
+         <img src="img/konito.jpeg" width="300" height="300" alt="Imagen de galleta (reemplazar)">
+        <p>Galleta de chocolate.</p>
+        <p>Precio: $1.50</p>
+        <p><button type="button" class="btn-agregar" aria-label="Agregar galleta al carrito">Agregar al carrito</button></p>
+        
+      </li>
+      <li class="producto" data-nombre="Hot dog" data-precio="2.50">
+       
+        
+        <h3>Hot dog</h3>
+        <img src="img/hotdog.jpeg" width="300" height="300" alt="Imagen de hotdog (reemplazar)">
+        <p>Hot dog con salchicha y salsas.</p>
+        <p>Precio: $2.50</p>
+        <p><button type="button" class="btn-agregar" aria-label="Agregar hotdog al carrito">Agregar al carrito</button></p>
+        
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>Integrantes: Juleidy Briones, Kenneth Perez, Kevin Bazurto</p>
+    <p>Proyecto de medio ciclo - Desarrollo basado en plataformas</p>
+  </footer>
+
+ 
+</body>
+</html>
