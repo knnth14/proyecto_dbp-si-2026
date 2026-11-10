@@ -1,0 +1,170 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+
+.saltar {
+  position: absolute;
+  left: -999px;
+}
+.saltar:focus {
+  left: 0;
+  background: #ffffff;
+  padding: 0.5rem;
+}
+
+header,
+main,
+footer {
+  padding: 1rem;
+
+}
+
+header {
+  background-color: 	#1b1f3a;
+  color: #ffffff;
+}
+header a {
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a[aria-current="page"] {
+  font-weight: bold;
+}
+
+main {
+  background-color: #392f5a;
+}
+
+a {
+color: bisque;
+}
+
+footer {
+  color: black;
+  background-color: #e4e1f0;
+  
+}
+
+
+.cartelera {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.pelicula {
+  background-color: #635b83;
+  border: 1px solid #e4e1f0;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.pelicula img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.detalle figure {
+  margin: 0 0 1rem 0;
+}
+.detalle img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tabla-scroll {
+  overflow-x: auto;
+}
+
+table {
+  color: black;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #a198c5;
+  
+}
+th,
+td {
+ border: 1px solid #e4e1f0;
+  padding: 0.4rem;
+  text-align: left;
+}
+
+
+label {
+  display: block;
+  margin-top: 0.75rem;
+}
+input,
+select {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+input[type="checkbox"] {
+  width: auto;
+  display: inline;
+}
+.campo-check label {
+  display: inline;
+}
+.error {
+  display: block;
+  color:chartreuse;
+  min-height: 1.2em;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+header h1 {
+  font-size: 3rem;
+}
+
+@media (min-width: 600px) {
+  .cartelera {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .cartelera {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .detalle {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 599px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
