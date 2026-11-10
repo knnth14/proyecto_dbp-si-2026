@@ -134,7 +134,7 @@ input[type="checkbox"] {
 }
 .error {
   display: block;
-  color:chartreuse;
+  color:#FF9999;
   min-height: 1.2em;
 }
 
